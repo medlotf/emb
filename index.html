@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMB</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/5f395f72b3.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+    </head>
+
+    <body>
+
+        <section id="notification" hidden>
+            <h4>
+                <span class="far fa-calendar-alt"></span>
+                Prochain événement le 22/02/2020
+            </h4>
+        </section>
+
+        <!-- NAVIGATION BAR -->
+        <section id="navigationBar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    
+                    <a class="navbar-brand" href="https://www.google.com">
+                        <img src="img/lg.png"/>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#">Présentation de l'association</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Nos Projets</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Nos Evénements</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">Nos Partenaires</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Contactez-Nous</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- SLIDER -->
+        <section id="slider"></section>
+
+        <!-- PRESENTATION PART -->
+        <section id="presentation">
+            <div class="container">
+                <div class="title">
+                    <div class="divider1"></div>
+                    <h1>Bienvenue à l'EMB</h1>
+                    <div class="divider2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="presContent">
+                            <h2 class="title">Association des Etudiants Marocains de Bordeaux</h2>
+                            <p class="paragraph">
+                                Le Lorem Ipsum est le faux texte standard de
+                                l'imprimerie depuis les années 1500, quand un
+                                imprimeur anonyme assembla ensemble des morceaux
+                                de texte pour réaliser un livre spécimen de
+                                polices de texte.
+                            </p>
+                            <div class="row justify-content-center">
+                                <div class="col-xs-1">
+                                    <button class="btn">
+                                        plus d'infos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="presContent video"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dividerSection1" ></div>
+
+        <section id="eventAdhesion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <div class="divider1"></div>
+                            <h1>événement</h1>
+                            <div class="divider2"></div>
+                        </div>
+                        <div class="presContent">
+                            <div class="eventSliders"></div>
+                            <h4>Le Lorem Ipsum est le faux texte standard</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 adh">
+                        <div class="title">
+                            <div class="divider1"></div>
+                            <h1>Adhésion</h1>
+                            <div class="divider2"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/prc.png" />
+                                </div>
+                                <div class="description">
+                                    <h6>
+                                        Tarifs préférentiels pour nos événements.
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/vip.png" />
+                                </div>
+                                <div class="description">
+                                    <h6>
+                                        Accès et placements prioritaires.
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/infos.png" />
+                                </div>
+                                <div class="description">
+                                    <h6>
+                                        Accès aux informations exclusives de l'association.
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/meeting.png" />
+                                </div>
+                                <div class="description">
+                                    <h6>Participation aux assemblées générales de l'association.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-xs-1">
+                                <button class="btn btn-primary">
+                                    Adhérez-vous
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dividerSection3"></div>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="title">
+                    <div class="divider1"></div>
+                    <h1>ils parlent de nous</h1>
+                    <div class="divider2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="persons">
+                            <div class="person text-center">
+                                <div class="photo ">
+                                    <img class="rounded-circle" src="img/avatar.png" alt="">
+                                </div>
+                                <div class="commentaire">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Vivamus interdum eget
+                                    ante eu ornare. Aenean turpis leo,
+                                    molestie nec pulvinar quis, suscipit ut
+                                    urna. Nunc porttitor nisl ut nulla
+                                    venenatis rutrum. Cras id ullamcorper
+                                    justo.
+                                </div>
+                                <div class="info">
+                                    <h4>Nom Prenom</h4>
+                                    <h6>Chef de Projet</h6>
+                                </div>
+                            </div>
+                            <div class="person text-center">
+                                <div class="photo">
+                                    <img class="rounded-circle" src="img/avatar.png" alt="">
+                                </div>
+                                <div class="commentaire">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Vivamus interdum eget
+                                    ante eu ornare. Aenean turpis leo,
+                                    molestie nec pulvinar quis, suscipit ut
+                                    urna.
+                                </div>
+                                <div class="info">
+                                    <h4>Nom Prenom</h4>
+                                    <h6>Chef de Projet</h6>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <div class="dividerSection1" ></div>
+        
+        <section id="partenaire">
+            <div class="container">
+                <div class="title">
+                    <div class="divider1"></div>
+                    <h1>Nos Partenaires</h1>
+                    <div class="divider2"></div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-sm-2 col-4 prtImg text-center">
+                        <img src="img/part/airArabia.png" alt="">
+                    </div>
+                    <div class="col-sm-2 col-4 prtImg text-center">
+                        <img src="img/part/bnp.png" alt="">
+                    </div>
+                    <div class="col-sm-2 col-4 prtImg text-center">
+                        <img src="img/part/pessac.png" alt="">
+                    </div>
+                    <div class="col-sm-2 col-3 prtImg text-center">
+                        <img src="img/part/brd.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 col-4 prtImg text-center">
+                        <img src="img/part/metropoleBrdx.png" alt="">
+                    </div>
+                    <div class="col-sm-3 col-4 prtImg text-center">
+                        <img class="crs" src="img/part/Crousbrdx.png" alt="">
+                    </div>
+                    <div class="col-sm-3 col-4 prtImg text-center">
+                        <img src="img/part/univbrdx.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2-sm">
+                        <button class="btn">plus d'infos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
