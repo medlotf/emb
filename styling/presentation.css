@@ -48,65 +48,23 @@ h3{
     background-image: linear-gradient(to bottom, #e8e8e8, #eeeeee, #f3f3f3, #f9f9f9, #ffffff);
 }
 
-/***************  notification  ***************/
-#notification {
-    background: var(--color-special) ;
-    color: #20232a;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-/***************  navigationBar  ***************/
-#navigationBar nav{
-    background-color:var(--color-part1) ;
-}
-
-#navigationBar .navbar-brand {
-    width: 12%;
-    height: 12%;
-}
-#navigationBar .navbar-brand img {
-    width: 90%;
-    height: 90%;
-    margin-bottom: 2px;
-}
-
-#navigationBar .navbar-toggler {
-    background-color:var(--color-black);
-}
-
-#navigationBar #myNavbar .nav-link {
-    color: var(--color-black);
-    text-align: center;
-    margin-left: 15px;
-    font-weight: bold;
-}
-
-#navigationBar #myNavbar li .nav-link.active{
+button.btn{
     background-color: var(--color-special);
-    border-radius: 14px;
+    color:var(--color-black);
+    border: 1px solid var(--color-special);
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in 0s;
     font-weight: bold;
-    color: var(--color-part1);
+    margin-top: 10px;
 }
 
-#navigationBar #myNavbar li .nav-link:hover:not(.active){
-    border-bottom: 2px solid var(--color-special);
-    border-bottom-width: thin;
-    color: var(--color-special);
-}
-
-
-/***************  slider  ***************/
-#slider {
-    background-color: black;
-    height: 500px;
-}
-
-/***************  presentation  ***************/
-#presentation {
-    background-color: var(--color-part1);
-    padding-top: 10px;
-    padding-bottom: 50px;
+button.btn:hover{
+    background-color: var(--color-black);
+    color:var(--color-special);
+    border: 1px solid var(--color-black);
+    border-radius: 25px;
+    
 }
 
 .title {
@@ -135,187 +93,142 @@ h3{
     margin: 0 auto;
 }
 
-.presContent {
-    margin: 0 auto;
-    margin-bottom: 20px;
+/***************  notification  ***************/
+#notification {
+    background: var(--color-special) ;
+    color: #20232a;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.presContent .title{
+/***************  navigationBar  ***************/
+#navigationBar nav{
+    background-color:var(--color-part1) ;
+}
+
+#navigationBar .navbar-brand {
+    width: 12%;
+    height: 12%;
+}
+#navigationBar .navbar-brand img {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 2px;
+}
+
+#navigationBar .navbar-toggler {
+    background-color:var(--color-part1);
+}
+
+#navigationBar #myNavbar .nav-link {
+    color: var(--color-black);
+    text-align: center;
+    margin-left: 15px;
     font-weight: bold;
-    text-transform: none;
 }
 
-.paragraph {
+#navigationBar #myNavbar li .nav-link.active{
+    background-color: var(--color-special);
+    border-radius: 14px;
+    font-weight: bold;
+    color: var(--color-part1);
+}
+
+#navigationBar #myNavbar li .nav-link:hover:not(.active){
+    border-bottom: 2px solid var(--color-special);
+    border-bottom-width: thin;
+    color: var(--color-special);
+}
+
+
+/***************  slider  ***************/
+#slider {
+    background-color: black;
+    height: 650px;
+}
+
+
+/***************  presentation  ***************/
+#presentation {
+    background-color: var(--color-part1);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.presParagraph {
     text-align: justify;
     text-justify: inter-word;
+    color: var(--color-black);
 }
 
-button.btn{
-    background-color: var(--color-special);
-    color:var(--color-black);
-    border: 1px solid var(--color-special);
-    border-radius: 0;
-    text-transform: uppercase;
-    transition: all 0.35s ease-in 0s;
-    font-weight: bold;
-    margin-top: 10px;
-}
+/************ Members *******************/
 
-button.btn:hover{
-    background-color: var(--color-black);
-    color:var(--color-special);
-    border: 1px solid var(--color-black);
-    border-radius: 25px;
-    
-}
-
-.video {
-    width: 100%;
-    height: 100%;
-    min-height: 230px;
-    background-color: black;
-}
-
-.center {
-    margin: 0 auto;
-    width: 30%;
-    margin-bottom: 20px;
-}
-
-/***************  eventAdhesion  ***************/
-#eventAdhesion {
+#members{
     background-color: var(--color-part2);
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
-#eventAdhesion .title .divider1{
-    width: 60px;
+#members .title .divider2{
+    width: 260px;
 }
 
-#eventAdhesion .title .divider2{
-    width: 240px;
+#members .item{
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
-.eventSliders {
-    min-height: 240px;
-    background-color: black;
-}
-
-.presContent h4{
-    margin-bottom: 20px;
-    margin-top: 12px;
-    text-align: center;
-}
-
-
-#eventAdhesion .adh .title .divider1{
-    width: 50px;
-}
-
-#eventAdhesion .adh .title .divider2{
-    width: 210px;
-}
-
-.item {
-    text-align: center;
-    width: 40%;
-    display: inline-block;
-    margin: 0 auto;
+#members .item img{
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
     margin-bottom: 1%;
 }
 
-.image {
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.image img {
-    width: 30%;
-    height: 30%;
-}
-
-.description h6{
-    font-weight: 500;
-}
-
-/***************  testimonials  ***************/
-
-#testimonials
-{
-    background-color: var(--color-part1);
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-#testimonials .divider1{
-    width: 60px;
-}
-
-#testimonials .divider2{
-    width: 410px;
-}
-
-.persons{
-    margin:0 auto
-}
-
-.photo
-{
-    margin: 2% auto;
-}
-
-.photo img{
-    width: 15%;
-    height: 15%;
-    border: 1.5px solid var(--color-special);
-    padding: 0.5%;
-    border-radius: 50%;
-    margin:0 auto
-}
-
-.commentaire
-{
-    font-style: italic;
-    width: 75%;
-    margin: 0 auto;
-    font-size: 16px;
+#members .item .infoPerson{
+    margin-top: 3%;
     text-align: center;
 }
 
-
-.info h4{
-    margin-top: 3%;
+#members .item .infoPerson .nom{
     font-weight: bold;
 }
 
-
-/***************  partenaire  ***************/
-#partenaire{
-    background-color: var(--color-part2);
-    padding-top: 10px;
-    padding-bottom: 30px;
+#members .item .infoPerson .role{
+    color: var(--color-special);
+    font-weight: bold;
 }
 
-#partenaire .divider1{
-    width: 70px;
+#members .item .infoPerson h5{
+    line-height: 1;
 }
 
-#partenaire .divider2{
-    width: 350px;
+#members .item .infoPerson > h5{
+    margin-top: -1%;
 }
 
-#partenaire .prtImg
-{
-    margin-bottom: 2%;
+#members .item .infoPerson .reseauSoci .fab{
+    font-size: 26px;
+    margin-top: 1%;
+    
 }
-#partenaire .prtImg img
-{
-    width: 65%;
+.reseauSoci a{
+    color: var(--color-black);
+    text-decoration: none;
+    transition: all 0.25s ease-in 0s;
 }
-#partenaire .prtImg .crs{
-    width: 50%;
+
+
+.reseauSoci a:hover{
+    color:var(--color-special);
 }
+
+
+#members .item .infoPerson .reseauSoci .fa-instagram{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 
 
 /***************  Links footer  ***************/
@@ -342,8 +255,6 @@ button.btn:hover{
     background-color: var(--color-special);
     width: 40%;
     height: 3px;
-    /*margin-left: 30%;
-    margin-top: -2%;*/
     margin:0 auto;
     margin-top: -1%;
 }
@@ -470,3 +381,42 @@ button.btn:hover{
 .header{
     text-align: center;
 }
+
+
+
+
+
+@media only screen and (max-width: 575px)
+{
+    #members .item img{
+        width: 30%;
+        height: 30%;
+        background-color: yellow;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991px)
+{
+    #members .item .infoPerson h4{
+        font-size: 1.25em;
+    }
+
+    #members .item .infoPerson h5{
+        font-size: 1.05em;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+    #members .item img{
+        margin-left: 35%;
+    }
+
+    #members .item{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+}
+
+
