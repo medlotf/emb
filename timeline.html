@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <meta name="viewport" content="wodth=device-width,initial-device=1">
+        <style>
+            
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: #e8e8e8;
+            }
+
+            .timeline{
+                position: relative;
+                width: 80%;
+                margin: 50px auto;
+            }
+
+            .timeline:before{
+                content: '';
+                position:absolute;
+                left: 50%;
+                width: 3px;
+                height: 100%;
+                background-color: #20232a;
+            }
+
+            .timeline ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            .timeline ul li{
+                list-style: none;
+                position: relative;
+                width: 49%;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+
+            .timeline ul li:nth-child(odd){
+                float: left;
+                text-align: justify;
+                clear: both;
+            }
+            .timeline ul li:nth-child(even){
+                float: right;
+                text-align: justify;
+                clear: both;
+            }
+
+            .timeline ul li .containerContent{
+                background-color: #20232a;
+                border-radius: 4px 4px;
+                padding: 10px 20px;
+                width: 80%;
+            }
+
+            .timeline ul li:nth-child(odd) .containerContent{
+                float: left;
+            }
+
+            .timeline ul li:nth-child(even) .containerContent{
+                float: right;
+            }
+
+            .timeline ul li .header .eveTitle{
+                width: 70%;
+                display: inline-block;
+                float: left;
+            }
+            .timeline ul li .header .details{
+                width: 29%;
+                display: inline-block;
+                float: right;
+            }
+            
+            .timeline ul li .paragraph {
+                margin-top: 10px;
+            }
+
+            .timeline ul li .eveTitle h2{
+                color:white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .timeline ul li p {
+                background-color: slategray;
+                margin: 10px 0 0;
+                padding: 0;
+            }
+
+            .timeline ul li .time h4{
+                margin: 0;
+                padding: 0;
+            }
+
+            .timeline ul li:nth-child(odd) .time{
+                position: absolute;
+                top: 0;
+                right: -54.5px;
+                margin: 0;
+                padding: 8px 16px;
+            }
+
+            .timeline ul li:nth-child(even) .time{
+                position: absolute;
+                top: 0;
+                left: -47px;
+                margin: 0;
+                padding: 8px 16px;
+            }
+
+            @media (max-width: 1000px) {
+                .timeline{
+                    width: 90%;
+                }
+            }
+
+            @media (max-width: 767px) {
+
+                .timeline{
+                    width:80%;
+                    padding-bottom: 0;
+                }
+                .timeline:before{
+                    left: 15px;
+                }
+                .timeline li:nth-child(odd),.timeline li:nth-child(even){
+                    width: 100%;
+                    text-align: center;
+                    float: left;
+                    padding-left: 50px;
+                    padding-top: 20px;
+                    margin-top: 12px;
+                }
+                .timeline ul li:nth-child(even) .time,
+                .timeline ul li:nth-child(odd) .time{
+                    top: 20px;
+                    left: -24px;
+                    right: inherit;
+                }
+
+                .timeline ul li:nth-child(odd) .containerContent,
+                .timeline ul li:nth-child(even) .containerContent
+                {
+                    float: left;
+                    margin-left: 25px;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="containerContent" >
+                        <div class="content">
+                            <div class="header">
+                                <div class="eveTitle">
+                                    <h2>TITLE</h2>
+                                </div>
+                                <div class="details">
+                                    <p>Time</p>
+                                    <p>Type</p>
+                                </div>
+                            </div>
+                            <div class="paragraph">
+                                <p>
+                                    Le Lorem Ipsum est le faux texte standard de
+                                        l'imprimerie depuis les années 1500, quand un
+                                        imprimeur anonyme assembla ensemble des morceaux
+                                        de texte pour réaliser un livre spécimen de
+                                        polices de texte.des morceaux
+                                        de texte pour réaliser un livre spécimen de
+                                        polices de texte.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>ICONE</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="containerContent" >
+                        <div class="content">
+                            <h3>title</h3>
+                            <p>
+                                Le Lorem Ipsum est le faux texte standard de
+                                    l'imprimerie depuis les années 1500, quand un
+                                    imprimeur anonyme assembla ensemble des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>ICONE</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="containerContent" >
+                        <div class="content">
+                            <h3>title</h3>
+                            <p>
+                                Le Lorem Ipsum est le faux texte standard de
+                                    l'imprimerie depuis les années 1500, quand un
+                                    imprimeur anonyme assembla ensemble des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>ICONE</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="containerContent" >
+                        <div class="content">
+                            <h3>title</h3>
+                            <p>
+                                Le Lorem Ipsum est le faux texte standard de
+                                    l'imprimerie depuis les années 1500, quand un
+                                    imprimeur anonyme assembla ensemble des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.des morceaux
+                                    de texte pour réaliser un livre spécimen de
+                                    polices de texte.
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>ICONE</h4>
+                        </div>
+                    </div>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+        </div>
+    </body>
+</html>
