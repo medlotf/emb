@@ -170,6 +170,31 @@ button.btn:hover {
     font-weight: bold;
 }
 
+.presseItem {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pItem {
+    background-color: var(--color-black);
+    border-radius: 10px;
+}
+
+.mediaImage {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.mediaImage img {
+    width: 100%;
+}
+
+.details {
+    margin: 10px;
+    background-color: red;
+}
+
 /***********************************/
 /***************  Links footer  ***************/
 #links {
