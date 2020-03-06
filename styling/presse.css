@@ -173,6 +173,7 @@ button.btn:hover {
 .presseItem {
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .pItem {
@@ -183,11 +184,12 @@ button.btn:hover {
 .mediaImage {
     width: 90%;
     margin: 0 auto;
-    padding: 12px;
+    padding: 20px;
 }
 
 .mediaImage img {
     width: 100%;
+    border-radius: 6px;
 }
 .sud {
     width: 100%;
@@ -218,6 +220,22 @@ button.btn:hover {
 .details .link a {
     font-style: italic;
     font-weight: bold;
+}
+.details .link a span {
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 575px) {
+    .allItems {
+        width: 85%;
+    }
+    .mediaImage {
+        width: 60%;
+    }
+    .details .title h5 {
+        font-size: 25px;
+    }
 }
 
 /***********************************/
