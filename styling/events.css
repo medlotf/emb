@@ -160,84 +160,60 @@ button.btn:hover {
 }
 /**************** Nos Projets *******************/
 
-#presse {
+#events {
     background-color: var(--color-part1);
     padding-top: 60px;
     padding-bottom: 50px;
 }
 
-#presse .title h1 {
+#events .title h1 {
     font-weight: bold;
 }
 
+.title .divider2 {
+    width: 300px;
+}
 
-.presseItem {
-    width: 80%;
-    margin: 0 auto;
+.title .divider1 {
+    width: 50px;
+}
+
+.evenementItem {
     margin-top: 20px;
 }
 
-.pItem {
+.imgSlide,.image {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+
+.titleEvent {
     background-color: var(--color-black);
-    border-radius: 10px;
-}
-
-.mediaImage {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.mediaImage img {
-    width: 100%;
-    border-radius: 6px;
-}
-.sud {
-    width: 100%;
-}
-
-.details {
-    background-color: #e0e0e0;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-radius: 0 0 10px 10px;
-}
-
-.details .title {
-    width: 90%;
-    margin: 10px auto;
-}
-.details .title h5 {
-    font-weight: bold;
-}
-
-.details .link {
-    width: 90%;
-    margin: 10px auto;
     color: var(--color-special);
-    text-align: right;
+    margin-top: -50px;
+    width: 80%;
+    float: left;
 }
 
-.details .link a {
-    font-style: italic;
+.titleEvent h5{
+    text-align: right;
+    padding:10px 20px 8px;
     font-weight: bold;
 }
-.details .link a span {
-    margin-left: 2px;
-    font-size: 12px;
+
+.description {
+    background-color: var(--color-part2);
+    color: var(--color-black);
+}
+
+.description p {
+    padding: 15px;
+    text-align: justify;
 }
 
 @media (max-width: 575px) {
-    #presse {
-        width: 85%;
-        margin:0 auto;
-    }
-    .mediaImage {
-        width: 60%;
-    }
-    .details .title h5 {
-        font-size: 25px;
-    }
+
 }
 
 /***********************************/
