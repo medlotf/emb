@@ -169,7 +169,7 @@ button.btn:hover {
 /***************  presentation  ***************/
 #presentation {
     background-color: var(--color-part1);
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 
