@@ -1,0 +1,116 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: lato;
+    font-size: 1em;
+    --color-special: #0171ad;
+    --color-black: #20232a;
+    --color-part1: white;
+    --color-part2: #e8e8e8;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.125em;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.dividerSection1 {
+    height: 30px;
+    background-image: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f9f9f9,
+        #f3f3f3,
+        #eeeeee,
+        #e8e8e8
+    );
+}
+
+.dividerSection2 {
+    height: 30px;
+    background-image: linear-gradient(
+        to bottom,
+        #e8e8e8,
+        #dfdfdf,
+        #d6d6d6,
+        #cdcdcd,
+        #c4c4c4
+    );
+}
+
+.dividerSection3 {
+    height: 30px;
+    background-image: linear-gradient(
+        to bottom,
+        #e8e8e8,
+        #eeeeee,
+        #f3f3f3,
+        #f9f9f9,
+        #ffffff
+    );
+}
+
+button.btn {
+    background-color: var(--color-special);
+    color: var(--color-black);
+    border: 1px solid var(--color-special);
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in 0s;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+button.btn:hover {
+    background-color: var(--color-part1);
+    color: var(--color-special);
+    border: 1px solid var(--color-black);
+    border-radius: 25px;
+}
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.title h2 {
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.title .divider1 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-special);
+    margin: 0 auto;
+}
+
+.title .divider2 {
+    width: 180px;
+    height: 3px;
+    background-color: var(--color-special);
+    margin: 0 auto;
+}
+

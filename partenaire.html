@@ -4,7 +4,9 @@
         <title>EMB</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styling/style.css" />
         <link rel="stylesheet" href="styling/partenaire.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
@@ -31,22 +33,25 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Accueil</a>
+                                <a class="nav-link accPre" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Présentation de l'association</a>
+                                <a class="nav-link " href="./presentation.html">Présentation de l'association</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Projets</a>
+                                <a class="nav-link" href="./projet.html">Nos Projets</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Événements</a>
+                                <a class="nav-link" href="./events.html">Nos Événements</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#">Nos Partenaires</a>
+                                <a class="nav-link accPre" href="./presse.html">Presse</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Contactez-Nous</a>
+                                <a class="nav-link active" href="./partenaire.html">Nos Partenaires</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
                             </li>
                         </ul>
                     </div>
@@ -56,14 +61,17 @@
 
         <!-- SLIDER -->
         <section id="slider"></section>
+
         <section id="partenaire">
             <div class="container">
-                <div class="title">
+
+                <div class="title" data-aos="fade-down" data-aos-duration="500">
                     <div class="divider1"></div>
                     <h2>Nos partenaires privés</h2>
                     <div class="divider2"></div>
                 </div>
-                <div class="row justify-content-center">
+
+                <div class="row justify-content-center" data-aos="zoom-in">
                     <div class="col-md-3 col-sm-4 col-6 prtImg text-center">
                         <img src="img/part/airArabia.png" alt="">
                     </div>
@@ -71,23 +79,34 @@
                         <img src="img/part/bnp.png" alt="">
                     </div>
                 </div>
-                <div class="title part2">
+
+                <div class="title part2" data-aos="fade-down" data-aos-duration="500">
                     <div class="divider1"></div>
                     <h2>Nos partenaires institutionnels</h2>
                     <div class="divider2"></div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center">
-                        <img src="img/part/univbrdx.png" alt="">
+                
+                <div class="row justify-content-center" >
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-out-right">
+                        <img src="img/part/universite.png" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center">
-                        <img src="img/part/Crousbrdx.png" alt="">
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-out-right">
+                        <img src="img/part/crous.png" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center">
-                        <img src="img/part/brd.png" alt="">
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-out-left">
+                        <img src="img/part/bordeaux.png" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center">
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-out-left">
                         <img src="img/part/pessac.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-in-up">
+                        <img src="img/part/metropoleBrd.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-in-up">
+                        <img src="img/part/aquitaine.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-5 prtImg text-center" data-aos="zoom-in-up">
+                        <img src="img/part/sommetfr.png" alt="">
                     </div>
                 </div>
             </div>
@@ -137,13 +156,15 @@
                             </div>
                         </div>
                         <div class="socialMedia text-center">
+                            <h6>Suivez Nous</h6>
                             <div class="sm">
                                 <img src="img/facebook.png">
-                                <h6>Rejoignez notre groupe</h6>
+                            </div>
+                            <div class="sm">
+                                <img src="img/youtube.png">
                             </div>
                             <div class="sm">
                                 <img src="img/instagram.png">
-                                <h6>Suivez nous sur instagram</h6>
                             </div>
                         </div>
                     </div>
@@ -152,5 +173,9 @@
             </div>
         </section>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({duration: 1500});
+        </script>
     </body>
 </html>

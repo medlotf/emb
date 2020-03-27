@@ -4,7 +4,9 @@
         <title>EMB</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styling/style.css" />
         <link rel="stylesheet" href="styling/presentation.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
@@ -38,22 +40,25 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Accueil</a>
+                                <a class="nav-link accPre" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#">Présentation de l'association</a>
+                                <a class="nav-link active" href="./presentation.html">Présentation de l'association</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Projets</a>
+                                <a class="nav-link" href="./projet.html">Nos Projets</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Événements</a>
+                                <a class="nav-link" href="./events.html">Nos Événements</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Nos Partenaires</a>
+                                <a class="nav-link accPre" href="./presse.html">Presse</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Contactez-Nous</a>
+                                <a class="nav-link " href="./partenaire.html">Nos Partenaires</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
                             </li>
                         </ul>
                     </div>
@@ -66,12 +71,12 @@
 
         <section id="presentation">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="fade-down" data-aos-duration="300">
                     <div class="divider1"></div>
                     <h1>Qui sommes-nous</h1>
                     <div class="divider2"></div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" data-aos="zoom-out">
                     <div class="col-sm-10 presParagraph">
                         Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
                         ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.quand un imprimeur anonyme assembla
@@ -90,7 +95,7 @@
 
         <section id="members">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="flip-down" data-aos-duration="500">
                     <div class="divider1"></div>
                     <h1>L'équipe emb</h1>
                     <div class="divider2"></div>
@@ -98,7 +103,7 @@
                 
                 <div class="row justify-content-around">
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                             <img class="rounded-circle" src="img/test.jpg">
                             <div class="infoPerson">
                                 <h4><span class="nom">FIKRI</span> El Maamoun</h4>
@@ -116,7 +121,7 @@
 
                 <div class="row justify-content-around">
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                             <img class="rounded-circle" src="img/sia.jpg">
                             <div class="infoPerson">
                                 <h4><span class="nom">SABAR</span> Oumaima</h4>
@@ -132,7 +137,7 @@
                     </div> 
 
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/alem.jpg">
                               <div class="infoPerson">
                                     <h4><span class="nom">ALEM</span> Fatima-Zahra</h4>
@@ -148,7 +153,7 @@
                     </div> 
 
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/aabla1.jpg">
                               <div class="infoPerson ">
                                     <h4><span class="nom">SADOQ</span> Aabla</h4>
@@ -165,7 +170,7 @@
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-md-4 col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">NIDAM</span> Abdelkabir</h4>
@@ -181,7 +186,7 @@
                     </div> 
 
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">ABAHROUZ</span> Amine</h4>
@@ -197,7 +202,7 @@
                     </div> 
 
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">EL WAKIL</span> Younes</h4>
@@ -215,7 +220,7 @@
 
                 <div class="row justify-content-around">
                     <div class="col-md-4 col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">BARDAG</span> El Mehdi</h4>
@@ -231,7 +236,7 @@
                     </div>  
 
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/sia.jpg">
                               <div class="infoPerson">
                                     <h4><span class="nom">SAOUDI</span> Ouijdane</h4>
@@ -248,7 +253,7 @@
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/sia.jpg">
                               <div class="infoPerson">
                                     <h4><span class="nom">BENMAKHLOUF</span> Fatima-Zahra</h4>
@@ -263,7 +268,7 @@
                         </div>
                     </div>  
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">HANKAOUI</span> Wassim</h4>
@@ -280,7 +285,7 @@
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-md-4  col-sm-6 x">
-                        <div class="item">
+                        <div class="item" data-aos="zoom-in">
                               <img class="rounded-circle" src="img/Dumb.png">
                               <div class="infoPerson">
                                     <h4><span class="nom">LOTF</span> Mohamed</h4>
@@ -342,13 +347,15 @@
                             </div>
                         </div>
                         <div class="socialMedia text-center">
+                            <h6>Suivez Nous</h6>
                             <div class="sm">
                                 <img src="img/facebook.png">
-                                <h6>Rejoignez notre groupe</h6>
+                            </div>
+                            <div class="sm">
+                                <img src="img/youtube.png">
                             </div>
                             <div class="sm">
                                 <img src="img/instagram.png">
-                                <h6>Suivez nous sur instagram</h6>
                             </div>
                         </div>
                     </div>
@@ -356,6 +363,12 @@
                 </div>
             </div>
         </section>
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({duration: 1500});
+        </script>
 
     </body>
 </html>

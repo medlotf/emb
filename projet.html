@@ -4,7 +4,9 @@
         <title>EMB</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styling/style.css" />
         <link rel="stylesheet" href="styling/projet.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
@@ -31,22 +33,25 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Accueil</a>
+                                <a class="nav-link accPre" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Présentation de l'association</a>
+                                <a class="nav-link " href="./presentation.html">Présentation de l'association</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#">Nos Projets</a>
+                                <a class="nav-link active" href="./projet.html">Nos Projets</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Événements</a>
+                                <a class="nav-link" href="./events.html">Nos Événements</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Partenaires</a>
+                                <a class="nav-link accPre" href="./presse.html">Presse</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Contactez-Nous</a>
+                                <a class="nav-link " href="./partenaire.html">Nos Partenaires</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
                             </li>
                         </ul>
                     </div>
@@ -55,14 +60,20 @@
         </section>
 
         <!-- SLIDER -->
-        <section id="slider"></section>
+            <div class="slid">
+            </div>
 
-        <section id="events">
+        <section id="projets">
             <div class="container">
-                <div class="timeline">
+                <div class="title" data-aos="fade-down" data-aos-duration="300">
+                    <div class="divider1"></div>
+                    <h1>Nos Projets</h1>
+                    <div class="divider2"></div>
+                </div>
+                <div class="timeline" data-aos="fade-up" data-aos-duration="200">
                     <ul>
-                        <li>
-                            <div class="containerContent ">
+                        <li data-aos="zoom-in-up" >
+                            <div class="containerContent">
                                 <div class="content">
                                     <div class="header">
                                         <div class="details">
@@ -97,12 +108,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="typeIcone">
+                                <div class="typeIcone" data-aos-duration="300">
                                     <img src="img/dancing.png" alt="">
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                             <div class="containerContent ">
                                 <div class="content">
                                     <div class="header">
@@ -143,7 +154,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                             <div class="containerContent ">
                                 <div class="content">
                                     <div class="header">
@@ -184,7 +195,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                             <div class="containerContent ">
                                 <div class="content">
                                     <div class="header">
@@ -225,7 +236,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                             <div class="containerContent">
                                 <div class="content">
                                     <div class="header">
@@ -266,7 +277,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                             <div class="containerContent">
                                 <div class="content">
                                     <div class="header">
@@ -357,13 +368,15 @@
                             </div>
                         </div>
                         <div class="socialMedia text-center">
+                            <h6>Suivez Nous</h6>
                             <div class="sm">
                                 <img src="img/facebook.png">
-                                <h6>Rejoignez notre groupe</h6>
+                            </div>
+                            <div class="sm">
+                                <img src="img/youtube.png">
                             </div>
                             <div class="sm">
                                 <img src="img/instagram.png">
-                                <h6>Suivez nous sur instagram</h6>
                             </div>
                         </div>
                     </div>
@@ -371,5 +384,10 @@
                 </div>
             </div>
         </section>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({duration: 2000});
+        </script>
     </body>
 </html>

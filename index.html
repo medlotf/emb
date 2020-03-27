@@ -4,16 +4,22 @@
         <title>EMB</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styling/style.css" />
         <link rel="stylesheet" href="styling/home.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/5f395f72b3.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
         <script src="script/script.js"></script>
     </head>
 
@@ -30,8 +36,7 @@
         <section id="navigationBar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    
-                    <a class="navbar-brand" href="https://www.google.com">
+                    <a class="navbar-brand" href="./index.html">
                         <img src="img/lg.png"/>
                     </a>
 
@@ -42,22 +47,25 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#">Accueil</a>
+                                <a class="nav-link active accPre" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Présentation de l'association</a>
+                                <a class="nav-link " href="./presentation.html">Présentation de l'association</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Projets</a>
+                                <a class="nav-link" href="./projet.html">Nos Projets</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Nos Événements</a>
+                                <a class="nav-link" href="./events.html">Nos Événements</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">Nos Partenaires</a>
+                                <a class="nav-link accPre" href="./presse.html">Presse</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">Contactez-Nous</a>
+                                <a class="nav-link " href="./partenaire.html">Nos Partenaires</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
                             </li>
                         </ul>
                     </div>
@@ -66,18 +74,20 @@
         </section>
 
         <!-- SLIDER -->
-        <section id="slider"></section>
+        <section id="slider">
+            
+        </section>
 
         <!-- PRESENTATION PART -->
         <section id="presentation">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="fade-down" data-aos-duration="300">
                     <div class="divider1"></div>
                     <h1>Bienvenue à l'EMB</h1>
                     <div class="divider2"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-right">
                         <div class="presContent">
                             <h2 class="title">Association des Etudiants Marocains de Bordeaux</h2>
                             <p class="paragraph">
@@ -96,8 +106,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="presContent video"></div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="presContent video">
+                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,24 +121,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="title">
+                        <div class="title"  data-aos="zoom-out-right" data-aos-duration="500">
                             <div class="divider1"></div>
-                            <h1>événement</h1>
+                                <h1>événement</h1>
                             <div class="divider2"></div>
                         </div>
-                        <div class="presContent">
+                        <div class="presContent" data-aos="fade-up-right">
                             <div class="eventSliders"></div>
                             <h4>Le Lorem Ipsum est le faux texte standard</h4>
                         </div>
                     </div>
 
                     <div class="col-lg-6 adh">
-                        <div class="title">
+                        <div class="title"  data-aos="zoom-out-left" data-aos-duration="500">
                             <div class="divider1"></div>
                             <h1>Adhésion</h1>
                             <div class="divider2"></div>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center" data-aos="fade-up-left">
                             <div class="item">
                                 <div class="image">
                                     <img src="img/prc.png" />
@@ -171,7 +183,7 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center" data-aos="fade-up">
                             <div class="col-xs-1">
                                 <button class="btn btn-primary">
                                     Adhérez-vous
@@ -183,17 +195,17 @@
             </div>
         </section>
 
-        <div class="dividerSection3"></div>
+        <div class="dividerSection2"></div>
 
         <section id="testimonials">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="flip-down" data-aos-duration="500">
                     <div class="divider1"></div>
                     <h1>ils parlent de nous</h1>
                     <div class="divider2"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="zoom-in-down">
                         <div class="persons">
                             <div class="person text-center">
                                 <div class="photo ">
@@ -213,6 +225,7 @@
                                     <h6>Chef de Projet</h6>
                                 </div>
                             </div>
+
                             <div class="person text-center">
                                 <div class="photo">
                                     <img class="rounded-circle" src="img/avatar.png" alt="">
@@ -239,39 +252,42 @@
         
         <section id="partenaire">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="fade-up" data-aos-duration="500">
                     <div class="divider1"></div>
                     <h1>Nos Partenaires</h1>
                     <div class="divider2"></div>
                 </div>
-                <div class="row justify-content-around">
-                    <div class="col-sm-2 col-4 prtImg text-center">
-                        <img src="img/part/airArabia.png" alt="">
+                <div data-aos="flip-left">
+                    <div class="row justify-content-around" >
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/airArabia.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/bnp.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/universite.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/crous.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-3 prtImg text-center">
+                            <img src="img/part/bordeaux.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/aquitaine.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/metropoleBrd.png" alt="">
+                        </div>
+                        <div class="col-sm-3 col-4 prtImg text-center">
+                            <img src="img/part/pessac.png" alt="">
+                        </div>     
                     </div>
-                    <div class="col-sm-2 col-4 prtImg text-center">
-                        <img src="img/part/bnp.png" alt="">
-                    </div>
-                    <div class="col-sm-2 col-4 prtImg text-center">
-                        <img src="img/part/pessac.png" alt="">
-                    </div>
-                    <div class="col-sm-2 col-3 prtImg text-center">
-                        <img src="img/part/brd.png" alt="">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-3 col-4 prtImg text-center">
-                        <img src="img/part/metropoleBrdx.png" alt="">
-                    </div>
-                    <div class="col-sm-3 col-4 prtImg text-center">
-                        <img class="crs" src="img/part/Crousbrdx.png" alt="">
-                    </div>
-                    <div class="col-sm-3 col-4 prtImg text-center">
-                        <img src="img/part/univbrdx.png" alt="">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-2-sm">
-                        <button class="btn">plus d'infos</button>
+                    <div class="row justify-content-center">
+                        <div class="col-2-sm">
+                            <button class="btn">plus d'infos</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,7 +328,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-xs-4 part4Footer">
+                    <div class="col-md-3 col-xs-4 part3Footer">
                         <div class="row justify-content-center">
                             <div class="col-xs-1">
                                 <button class="btn btn-primary">
@@ -321,13 +337,15 @@
                             </div>
                         </div>
                         <div class="socialMedia text-center">
+                            <h6>Suivez Nous</h6>
                             <div class="sm">
                                 <img src="img/facebook.png">
-                                <h6>Rejoignez notre groupe</h6>
+                            </div>
+                            <div class="sm">
+                                <img src="img/youtube.png">
                             </div>
                             <div class="sm">
                                 <img src="img/instagram.png">
-                                <h6>Suivez nous sur instagram</h6>
                             </div>
                         </div>
                     </div>
@@ -336,6 +354,9 @@
             </div>
         </section>
 
-        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({duration: 2000});
+    </script>
     </body>
 </html>
