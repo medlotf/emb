@@ -43,9 +43,42 @@
 
 /***************  slider  ***************/
 #slider {
-    background-color: black;
-    height: 650px;
+    background-image: url("./../img/background/partenaire.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 85vh;
+    overflow: hidden;
 }
+
+#slider h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 85vh;
+    text-transform: uppercase;
+    color: var(--color-part1);
+}
+
+
+@media only screen and (max-width: 450px){
+    #slider h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width:450px){
+    #slider h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #slider h1 {
+        font-size: 4rem;
+    }
+}
+
 
 /************** Partenaire***************/
 

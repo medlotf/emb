@@ -9,6 +9,11 @@
     --color-part2: #e8e8e8;
 }
 
+
+html,body{
+    overflow-x: hidden;
+}
+
 h1 {
     font-size: 3em;
     line-height: 1.25;
@@ -50,18 +55,6 @@ h3 {
     background-image: linear-gradient(
         to bottom,
         #e8e8e8,
-        #dfdfdf,
-        #d6d6d6,
-        #cdcdcd,
-        #c4c4c4
-    );
-}
-
-.dividerSection3 {
-    height: 30px;
-    background-image: linear-gradient(
-        to bottom,
-        #e8e8e8,
         #eeeeee,
         #f3f3f3,
         #f9f9f9,
@@ -82,7 +75,7 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: var(--color-part1);
+    background-color: var(--color-b);
     color: var(--color-special);
     border: 1px solid var(--color-black);
     border-radius: 25px;
