@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styleNav.css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/5f395f72b3.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="navBar">
+            <div class="container">
+                <a href="#" class="logo"><img src="./img/lg.png" /></a>
+                <span class="menu-toggle-btn fas fa-bars"></span>
+                <nav class="navigation-menu">
+                    <a href="#">Accueil</a>
+                    <a href="#">Présentation de l'association</a>
+                    <a href="#">Nos Projets</a>
+                    <a href="#">Nos Evenements</a>
+                </nav>
+            </div>
+        </section>
+        <section id="slider">
+            <div class="container">
+                <h1>Partenaire</h1>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            $(".menu-toggle-btn").click(function () {
+                $(this).toggleClass("fa-times");
+                $(".navigation-menu").toggleClass("active");
+            });
+        </script>
+    </body>
+</html>

@@ -1,203 +1,240 @@
-
 /***************  navigationBar  ***************/
-#navigationBar nav {
-    background-color: var(--color-part1);
+
+#navBar {
+    height: 110px;
+    background-color: white;
 }
 
-#navigationBar .navbar-brand {
-    width: 12%;
-    height: 12%;
-}
-#navigationBar .navbar-brand img {
-    width: 90%;
-    height: 90%;
-    margin-bottom: 2px;
+#navBar .logo {
+    float: left;
+    padding: 20px 0;
 }
 
-#navigationBar .navbar-toggler {
-    background-color: var(--color-part1);
+#navBar .logo img {
+    height: 70px;
 }
 
-#navigationBar #myNavbar .nav-link {
-    color: var(--color-black);
-    text-align: center;
-    margin-left: 15px;
+#navBar .navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+}
+
+#navBar .navigation-menu a {
+    margin-left: 12px;
+    color: #20232a;
+    font-size: 16px;
     font-weight: bold;
-}
-#navigationBar #myNavbar li .nav-link.active {
-    background-color: var(--color-special);
-    border-radius: 14px;
-    font-weight: bold;
-    color: var(--color-part1);
-}
-#navigationBar #myNavbar li .nav-link:hover:not(.active) {
-    border-bottom: 2px solid var(--color-special);
-    border-bottom-width: thin;
-    color: var(--color-special);
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: 0.3s linear;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 1199px) and (min-width:991px) {
-    .accPre {
-        margin-top: 12px;
+#navBar .navigation-menu a:hover {
+    background-color: #0171ad;
+    color: #20232a;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 110px;
+    line-height: 110px !important;
+    font-size: 30px;
+    display: none !important;
+    cursor: pointer;
+    color: #0171ad;
+}
+
+@media screen and (max-width: 991px) {
+    #navBar .menu-toggle-btn {
+        display: block !important;
+    }
+
+    #navBar .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 600px;
+        background-color: #20232a;
+        top: 110px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #navBar .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #20232a;
+        position: absolute;
+        top: -10px;
+        right: 16px;
+    }
+
+    #navBar .navigation-menu a {
+        display: block;
+        color: white;
+        margin: 10px 0;
+    }
+
+    #navBar .navigation-menu.active {
+        display: block;
+        z-index: 1;
     }
 }
 
-
-/***************  slider  ***************/
-#slider {
-    background-image: url("./../img/background/projet.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
-    height: 85vh;
-    overflow: hidden;
-}
-
-#slider h1 {
-    font-weight: bold;
-    font-size: 5rem;
-    text-align: center;
-    line-height: 85vh;
-    text-transform: uppercase;
-    color: var(--color-part1);
-}
-
-
-@media only screen and (max-width: 450px){
-    #slider h1 {
-        font-size: 2rem;
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #navBar .navigation-menu a {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 5px;
+        border-radius: 4px;
+        transition: 0.3s linear;
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width:450px){
-    #slider h1 {
-        font-size: 3rem;
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #navBar .navigation-menu::before {
+        right: 39px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    #slider h1 {
-        font-size: 4rem;
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #navBar .navigation-menu::before {
+        right: 44px;
     }
 }
-
 /**************** Nos Projets *******************/
 
-#projets
-{
-	background-color: var(--color-part2);
+#projets {
+    background-color: var(--color-part2);
     padding-top: 60px;
     padding-bottom: 50px;
 }
 
-#projets .title .divider2{
+#projets .title .divider2 {
     width: 280px;
 }
 
-#projets .title .divider1{
+#projets .title .divider1 {
     width: 50px;
 }
 
-.timeline{
-	position: relative;
-	width: 90%;
-	margin: 50px auto;
+.timeline {
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
 }
 
-.timeline:before{
-	content: '';
-	position: absolute;
-	left: 50%;
-	width: 3px;
-	height: 100%;
-	background-color: var(--color-black);
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-black);
 }
 
 .timeline ul {
-	margin: 0;
-	padding: 0;
-	padding-top: 100px;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
 }
 
-.timeline ul li{
-	list-style: none;
-	position: relative;
-	width: 49%;
-	box-sizing: border-box;
-	margin-bottom: 20px;
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 49%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-.timeline ul li:nth-child(odd){
-	float: left;
-	text-align: justify;
-	clear: both;
-	margin-top: -100px;
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: justify;
+    clear: both;
+    margin-top: -280px;
 }
 
-
-.timeline ul li:nth-child(even){
-	float: right;
-	text-align: justify;
-	clear: both;
-	margin-top: -220px;
+.timeline ul li:first-child {
+    margin-top: -110px;
 }
 
-.timeline ul li .containerContent{
-	background-color: #20232a;
-	color: var(--color-part1);
-	border-radius: 4px 4px;
-	padding: 15px 0;
-	width: 90%;
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: justify;
+    clear: both;
+    margin-top: -350px;
 }
 
-.timeline ul li:nth-child(odd) .containerContent{
-	float: left;
+.timeline ul li .containerContent {
+    background-color: #20232a;
+    color: var(--color-part1);
+    border-radius: 4px 4px;
+    padding: 15px 0;
+    width: 90%;
 }
 
-.timeline ul li:nth-child(even) .containerContent{
-	float: right;
+.timeline ul li:nth-child(odd) .containerContent {
+    float: left;
 }
 
-.timeline ul li .header{
-	padding-left: 20px;
-	padding-right: 20px;
+.timeline ul li:nth-child(even) .containerContent {
+    float: right;
+}
+
+.timeline ul li .header {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .timeline ul li .header .eventTitle {
     text-align: center;
     padding-bottom: 5px;
-	margin-top: -3px;
+    margin-top: -3px;
 }
-.timeline ul li .header .eventTitle h3,.timeline ul li .header .details h6{
-	font-weight: bold;
-}
-
-.timeline ul li .header .details{
-	text-align: right;
-	margin-top: -10px;
-	color: var(--color-special);
+.timeline ul li .header .eventTitle h3,
+.timeline ul li .header .details h6 {
+    font-weight: bold;
 }
 
-.paragraph{
-	padding: 5px 20px;
-	font-size: 14px;
-	color:  black;
-	background-color: var(--color-part1);
+.timeline ul li .header .details {
+    text-align: right;
+    margin-top: -10px;
+    color: var(--color-special);
 }
 
-.media{
-	background-color: black;
-	margin: 20px 20px 10px 20px;
-	height: 200px;
-}
-.typeIcone{
-	width: 15%;
-	height: 15%;
+.paragraph {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: black;
+    background-color: var(--color-part1);
 }
 
-.typeIcone img{
-	width: 100%;
-	border-radius: 50%;
+.media {
+    margin: 15px 15px 0px 15px;
+}
+
+.media img {
+    width: 100%;
+    border: 3px solid var(--color-part1);
+}
+
+.typeIcone {
+    width: 15%;
+    height: 15%;
+}
+
+.typeIcone img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .timeline ul li:nth-child(odd) .typeIcone {
@@ -208,101 +245,128 @@
     padding: 5px 10px;
 }
 
-.timeline ul li:nth-child(even) .typeIcone{
-	position: absolute;
-	top: 0;
-	left: -45px;
-	margin: 0;
-	padding: 5px 10px;
+.timeline ul li:nth-child(even) .typeIcone {
+    position: absolute;
+    top: 0;
+    left: -45px;
+    margin: 0;
+    padding: 5px 10px;
 }
 
-@media (max-width: 1199px)  and  (min-width: 992px){
-
-	.timeline ul li:nth-child(odd) .typeIcone {
-
-		right: -41px;
-		padding: 3px 6px;
-	}
-	
-	.timeline ul li:nth-child(even) .typeIcone{
-		top: 0;
-		left: -37.5px;
-		padding: 3px 6px;
-	}
+button.btn:hover {
+    background-color: var(--color-part1);
+    color: var(--color-special);
+    border-color: var(--color-part1);
 }
 
-@media (max-width: 991px)  and  (min-width: 768px){
-	.timeline{
-		width: 100%;
-		padding-bottom: 0;
-	}
-	.timeline ul li:nth-child(odd) .typeIcone {
-		top:5px;
-		right: -34px;
-		padding: 0 0;
-	}
-	
-	.timeline ul li:nth-child(even) .typeIcone{
-		top: 5px;
-		left: -31px;
-		padding: 0 0;
-	}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .timeline ul li:nth-child(odd) .typeIcone {
+        right: -41px;
+        padding: 3px 6px;
+    }
+
+    .timeline ul li:nth-child(even) .typeIcone {
+        top: 0;
+        left: -37.5px;
+        padding: 3px 6px;
+    }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .timeline ul li:nth-child(odd) .typeIcone {
+        top: 5px;
+        right: -34px;
+        padding: 0 0;
+    }
+
+    .timeline ul li:nth-child(even) .typeIcone {
+        top: 5px;
+        left: -31px;
+        padding: 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 880px;
+    }
+}
 
 @media (max-width: 767px) {
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
 
-	.timeline{
-		width:100%;
-		padding-bottom: 0;
-	}
+    .timeline ul {
+        margin: 0;
+        padding: 0;
+        padding-top: 0;
+    }
 
-	.timeline ul {
-		margin: 0;
-		padding: 0;
-		padding-top: 0;
-	}
+    .timeline:before {
+        left: 1px;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        text-align: justify;
+        clear: both;
+        margin-top: 0px;
+    }
 
-	.timeline:before{
-		left: 1px;
-	}
-	.timeline ul li:nth-child(odd){
-		float: left;
-		text-align: justify;
-		clear: both;
-		margin-top: 0px;
-	}
-	
-	
-	.timeline ul li:nth-child(even){
-		float: right;
-		text-align: justify;
-		clear: both;
-		margin-top: 0px;
-	}
+    .timeline ul li:first-child {
+        margin-top: -20px;
+    }
 
-	.timeline li:nth-child(odd),.timeline li:nth-child(even){
-		width: 100%;
-		text-align: center;
-		float: right;
-		padding-left: 20px;
-		padding-top: 5px;
-	}
+    .timeline ul li:nth-child(even) {
+        float: right;
+        text-align: justify;
+        clear: both;
+        margin-top: 20px;
+    }
 
-	.timeline ul li:nth-child(even) .typeIcone,
-	.timeline ul li:nth-child(odd) .typeIcone{
-		top: 10px;
-		left:-36px;
-		right: inherit;
-	}
+    .timeline li:nth-child(odd),
+    .timeline li:nth-child(even) {
+        width: 100%;
+        text-align: center;
+        float: right;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
 
-	.timeline ul li:nth-child(odd) .containerContent,
-	.timeline ul li:nth-child(even) .containerContent
-	{
-		float: left;
-		margin-left: 25px;
-	}
+    .timeline ul li:nth-child(even) .typeIcone,
+    .timeline ul li:nth-child(odd) .typeIcone {
+        top: 10px;
+        left: -36px;
+        right: inherit;
+    }
 
+    .timeline ul li:nth-child(odd) .containerContent,
+    .timeline ul li:nth-child(even) .containerContent {
+        float: left;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .timeline ul li:nth-child(even) .typeIcone img,
+    .timeline ul li:nth-child(odd) .typeIcone img {
+        display: none;
+    }
+
+    .timeline:before {
+        content: none;
+    }
+
+    .timeline ul li:nth-child(odd) .containerContent,
+    .timeline ul li:nth-child(even) .containerContent {
+        float: left;
+        margin-left: 10px;
+    }
 }
 
 /***************  Links footer  ***************/
@@ -363,11 +427,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .part2Footer{
+    .part2Footer {
         margin: 0;
         padding: 0;
     }
-    
+
     .Alllink {
         margin-left: 0%;
         padding: 0;
@@ -393,7 +457,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width:450px) {
+@media only screen and (max-width: 767px) and (min-width: 450px) {
     .l1 {
         margin-bottom: 5%;
     }

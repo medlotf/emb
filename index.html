@@ -5,21 +5,26 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="styling/style.css" />
-        <link rel="stylesheet" href="styling/home.css" />
+        <link rel="stylesheet" href="styling/index.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+    
 
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <script src="https://kit.fontawesome.com/5f395f72b3.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
         <script src="script/script.js"></script>
     </head>
 
@@ -33,44 +38,20 @@
         </section>
 
         <!-- NAVIGATION BAR -->
-        <section id="navigationBar">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="img/lg.png"/>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" type="button" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link active accPre" href="./index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="./presentation.html">Présentation de l'association</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./projet.html">Nos Projets</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./events.html">Nos Événements</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link accPre" href="./presse.html">Presse</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="./partenaire.html">Nos Partenaires</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <section id="navBar">
+            <div class="container">
+                <a href="#" class="logo"><img src="./img/lg.png"></a>
+                <span class="menu-toggle-btn fas fa-bars"></span>
+                <nav class="navigation-menu">
+                    <a href="./index.html" >Accueil</a>
+                    <a href="./presentation.html">Présentation de l'association</a>
+                    <a href="./events.html">Nos Evenements</a>
+                    <a href="./projet.html">Nos Projets</a>
+                    <a href="./presse.html">Presse</a>
+                    <a href="./partenaire.html">Nos Partenaires</a>
+                    <a href="./index.html">Contactez Nous</a>
+                </nav>
+            </div>
         </section>
 
         <!-- SLIDER -->
@@ -91,17 +72,18 @@
                         <div class="presContent">
                             <h2 class="title">Association des Etudiants Marocains de Bordeaux</h2>
                             <p class="paragraph">
-                                Le Lorem Ipsum est le faux texte standard de
-                                l'imprimerie depuis les années 1500, quand un
-                                imprimeur anonyme assembla ensemble des morceaux
-                                de texte pour réaliser un livre spécimen de
-                                polices de texte.
+                                L’EMB - Etudiants Marocains de Bordeaux - est une association créée en septembre 2013. 
+                                Elle a pour objectifs de rassembler et soutenir tous les étudiants marocains que compte 
+                                notre métropole ainsi que de partager des valeurs fondamentales de paix, de diversité 
+                                et de vivre ensemble.
                             </p>
                             <div class="row justify-content-center">
                                 <div class="col-xs-1">
-                                    <button class="btn">
-                                        plus d'infos
-                                    </button>
+                                    <a href="./presentation.html">
+                                        <button class="btn btn-primary" >
+                                            Plus d'infos
+                                        </button>
+                                    </a> 
                                 </div>
                             </div>
                         </div>
@@ -127,21 +109,31 @@
                             <div class="divider2"></div>
                         </div>
                         <div class="presContent" data-aos="fade-up-right">
-                            <div class="eventSliders"></div>
-                            <h4>Le Lorem Ipsum est le faux texte standard</h4>
+                            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-interval="3000">
+                                        <img class="d-block w-100 rounded" src="./img/event/ev1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item" data-interval="3000">
+                                        <img class="d-block w-100 rounded" src="./img/event/ev2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item" data-interval="3000">
+                                        <img class="d-block w-100 rounded" src="./img/event/ev3.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                     <div class="col-lg-6 adh">
                         <div class="title"  data-aos="zoom-out-left" data-aos-duration="500">
                             <div class="divider1"></div>
-                            <h1>Adhésion</h1>
+                            <h1>Adhésion Et Billeterie</h1>
                             <div class="divider2"></div>
                         </div>
                         <div class="row justify-content-center" data-aos="fade-up-left">
                             <div class="item">
                                 <div class="image">
-                                    <img src="img/prc.png" />
+                                    <img src="img/adhesion/prc.png" />
                                 </div>
                                 <div class="description">
                                     <h6>
@@ -152,7 +144,7 @@
 
                             <div class="item">
                                 <div class="image">
-                                    <img src="img/vip.png" />
+                                    <img src="img/adhesion/vip.png" />
                                 </div>
                                 <div class="description">
                                     <h6>
@@ -163,7 +155,7 @@
 
                             <div class="item">
                                 <div class="image">
-                                    <img src="img/infos.png" />
+                                    <img src="img/adhesion/infos.png" />
                                 </div>
                                 <div class="description">
                                     <h6>
@@ -174,7 +166,7 @@
 
                             <div class="item">
                                 <div class="image">
-                                    <img src="img/meeting.png" />
+                                    <img src="img/adhesion/meeting.png" />
                                 </div>
                                 <div class="description">
                                     <h6>Participation aux assemblées générales de l'association.
@@ -184,10 +176,19 @@
                         </div>
 
                         <div class="row justify-content-center" data-aos="fade-up">
-                            <div class="col-xs-1">
-                                <button class="btn btn-primary">
-                                    Adhérez-vous
-                                </button>
+                            <div class="col-xs-4" style="margin: 0 12px">
+                                <a href="https://https://www.helloasso.com">
+                                    <button class="btn btn-primary" >
+                                        Adhérez-vous
+                                    </button>
+                                </a>   
+                            </div>
+                            <div class="col-xs-4" style="margin: 0 12px">
+                                <a href="https://https://www.helloasso.com">
+                                    <button class="btn btn-primary" >
+                                        Billeterie
+                                    </button>
+                                </a> 
                             </div>
                         </div>
                     </div>
@@ -204,89 +205,95 @@
                     <h1>ils parlent de nous</h1>
                     <div class="divider2"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" data-aos="zoom-in-down">
-                        <div class="persons">
-                            <div class="person text-center">
-                                <div class="photo ">
-                                    <img class="rounded-circle" src="img/avatar.png" alt="">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./img/testimonials/person-2.jpg" alt=""/>
                                 </div>
-                                <div class="commentaire">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Vivamus interdum eget
-                                    ante eu ornare. Aenean turpis leo,
-                                    molestie nec pulvinar quis, suscipit ut
-                                    urna. Nunc porttitor nisl ut nulla
-                                    venenatis rutrum. Cras id ullamcorper
-                                    justo.
-                                </div>
-                                <div class="info">
-                                    <h4>Nom Prenom</h4>
-                                    <h6>Chef de Projet</h6>
-                                </div>
+                                <h3 class="testimonial-title">
+                                    Williamson<small>, Web Developer</small>
+                                </h3>
+                                <p class="description">
+                                    L’EMB - Etudiants Marocains de Bordeaux - est unfs ins de Bordeaux - est une association créée en septembre 2013. Elle a pour objectifs ins de Bordeaux - est une association
+                                </p>
                             </div>
 
-                            <div class="person text-center">
-                                <div class="photo">
-                                    <img class="rounded-circle" src="img/avatar.png" alt="">
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./img/testimonials/Sam-Revilter.jpg" alt=""/>
                                 </div>
-                                <div class="commentaire">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Vivamus interdum eget
-                                    ante eu ornare. Aenean turpis leo,
-                                    molestie nec pulvinar quis, suscipit ut
-                                    urna.
+                                <h3 class="testimonial-title">
+                                    kristiana<small>, Web Designer</small>
+                                </h3>
+                                <p class="description">
+                                    Conscients du rôle primordial de la culture comme facteur de rapprochement entre les peuples et les nations,  nous sommes attachés à la diffusion d
+                                </p>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./img/testimonials/team4-large.jpg" alt=""/>
                                 </div>
-                                <div class="info">
-                                    <h4>Nom Prenom</h4>
-                                    <h6>Chef de Projet</h6>
-                                </div>
-                            </div>            
+                                <h3 class="testimonial-title">
+                                    Steve Thomas<small>, Web Developer</small>
+                                </h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>  
-
+        </section> 
         <div class="dividerSection1" ></div>
         
         <section id="partenaire">
             <div class="container">
-                <div class="title" data-aos="fade-up" data-aos-duration="500">
+                <div class="title" >
                     <div class="divider1"></div>
                     <h1>Nos Partenaires</h1>
                     <div class="divider2"></div>
                 </div>
-                <div data-aos="flip-left">
-                    <div class="row justify-content-around" >
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/airArabia.png" alt="">
+                <div>
+                    <div class="row justify-content-center" >
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/airArabia.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/bnp.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/bnp.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/universite.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/universite.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/crous.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/crous.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/bordeaux.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/bordeaux.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/aquitaine.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/pessac.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/metropoleBrd.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/aquitaine.png" alt="">
                         </div>
-                        <div class="col-sm-3 col-4 prtImg text-center">
-                            <img src="img/part/pessac.png" alt="">
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/metropoleBrd.png" alt="">
+                        </div>
+                        <div class="col-sm-2 col-4 prtImg text-center">
+                            <img src="img/partenaire/sommetfr.png" alt="">
                         </div>     
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-2-sm">
-                            <button class="btn">plus d'infos</button>
+                            <a href="./partenaire.html">
+                                <button class="btn btn-primary" >
+                                    Plus d'infos
+                                </button>
+                            </a> 
                         </div>
                     </div>
                 </div>
@@ -339,13 +346,13 @@
                         <div class="socialMedia text-center">
                             <h6>Suivez Nous</h6>
                             <div class="sm">
-                                <img src="img/facebook.png">
+                                <img src="img/footerMedia/facebook.png">
                             </div>
                             <div class="sm">
-                                <img src="img/youtube.png">
+                                <img src="img/footerMedia/youtube.png">
                             </div>
                             <div class="sm">
-                                <img src="img/instagram.png">
+                                <img src="img/footerMedia/instagram.png">
                             </div>
                         </div>
                     </div>
@@ -357,6 +364,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init({duration: 2000});
+        $('.menu-toggle-btn').click(function(){
+            $(this).toggleClass("fa-times");
+            $('.navigation-menu').toggleClass("active");
+        })
     </script>
     </body>
 </html>

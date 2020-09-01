@@ -8,145 +8,319 @@
         <link rel="stylesheet" href="styling/events.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"/>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <script src="https://kit.fontawesome.com/5f395f72b3.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+        <script src="script/script.js"></script>
     </head>
 
     <body>
 
         <!-- NAVIGATION BAR -->
-        <section id="navigationBar">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    
-                    <a class="navbar-brand" href="https://www.google.com">
-                        <img src="img/lg.png"/>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" type="button" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link accPre" href="./index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="./presentation.html">Présentation de l'association</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./projet.html">Nos Projets</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active" href="./events.html">Nos Événements</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link accPre" href="./presse.html">Presse</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="./partenaire.html">Nos Partenaires</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./index.html">Contactez-Nous</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-
-        <!-- SLIDER -->
-        <section id="slider">
+        <section id="navBar">
             <div class="container">
-                <h1 data-aos="fade-down" data-aos-duration="2000">NOS ÉVÉNEMENTS</h1>
+                <a href="#" class="logo"><img src="./img/lg.png"></a>
+                <span class="menu-toggle-btn fas fa-bars"></span>
+                <nav class="navigation-menu">
+                    <a href="./index.html" >Accueil</a>
+                    <a href="./presentation.html">Présentation de l'association</a>
+                    <a href="./events.html">Nos Evenements</a>
+                    <a href="./projet.html">Nos Projets</a>
+                    <a href="./presse.html">Presse</a>
+                    <a href="./partenaire.html">Nos Partenaires</a>
+                    <a href="./index.html">Contactez Nous</a>
+                </nav>
             </div>
         </section>
 
+
         <section id="events">
             <div class="container">
+
                 <div class="title" data-aos="fade-down" data-aos-duration="300">
                     <div class="divider1"></div>
-                    <h1>Événements</h1>
+                    <h1>nos Événements</h1>
                     <div class="divider2"></div>
                 </div>
 
-                <div class="row justify-content-around">
-                    <div class="evenementItem col-md-5 col-sm-12 " data-aos="fade-up-right">
-                        <div class="pItem">
-                            <div class="imgSlide">
-                                <div class="image"></div>
+                <div class="allEvents">
+                    <div class="eventItem">
+                        <div class="titreEvent">
+                            <h2>Dîners d'intégration : </h2>
+                        </div>
+                        <p class="descriptionEvent">
+                            Le dîner annuel d’intégration est un moment clé de l’année universitaire. Plus de 250 étudiants y prennent part dans une ambiance festive et conviviale pour faire connaissance, échanger et partager des expériences. Un repas succulent et un orchestre de musique chaabi marocaine font le succès de cet événement très attendu chaque année.
+                        </p>
+                        <div class="row justify-content-around">
+                            <div class="photoPart col-lg-6">
+                                <div class="presContent" data-aos="fade-right">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/ev1.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/ev2.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/ev3.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="titleEvent">
-                                <h5>Soirées culturelles</h5>
+                            <div class="videoPart col-lg-6">
+                                <iframe data-aos="fade-left" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                             </div>
-                            <div class="description">
-                                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
-                                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait
-                                que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en
-                                soit modifié.</p>
+                        </div>
+
+                        <div class="listingTypeEvent row justify-content-around">
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                        <img class="card-img-top" src="./img/event/d181.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dîner d'integration 2018/2019</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/d171.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dîner d'integration 2017/2018</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/d161.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dîner d'integration 2016/2017</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/d151.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dîner d'integration 2015/2016</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/d141.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dîner d'integration 2014/2015</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dividerEvents"></div>
+
+                    <div class="eventItem">
+                        <div class="titreEvent">
+                            <h2>Conférences : </h2>
+                        </div>
+                        <p class="descriptionEvent">
+                            L’organisation des conférences est une activité essentielle au sein de l’EMB. Elle permet aux étudiants de rentrer en contact avec des intellectuels ou des décideurs publics marocains pour s’informer sur des sujets d’actualité ou partager des interrogations ou des propositions. Plusieurs ministres, professeurs universitaires et membres de la société civile ont animé des conférences sur des sujets divers et variés.
+                        </p>
+                        <div class="row justify-content-around">
+                            <div class="photoPart col-lg-6">
+                                <div class="presContent" data-aos="fade-right">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/c171.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/c142.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/c173.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="videoPart col-lg-6">
+                                <iframe data-aos="fade-left" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="listingTypeEvent row justify-content-around">
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                        <img class="card-img-top" src="./img/event/c171.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Conférence 2017/2018</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/c141.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Conférence 2014/2015</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="evenementItem col-md-5 col-sm-12 " data-aos="fade-up-left">
-                        <div class="pItem">
-                            <div class="imgSlide">
-                                <div class="image"></div>
+                    <div class="dividerEvents"></div>
+
+                    <div class="eventItem">
+                        <div class="titreEvent">
+                            <h2>Soirées culturelles : </h2>
+                        </div>
+                        <p class="descriptionEvent">
+                            Les événements folkloriques et culturels sont au cœur de l’action de l’EMB. A ce titre, plusieurs soirées ont été organisées autour de la musique Gnawa, Issawa, Dakka Marrakchia et d’autres projets sont en cours de réalisation pour inclure également la musique arabo-andalouse et amazigh.
+                        </p>
+                        <div class="row justify-content-around">
+                            <div class="photoPart col-lg-6">
+                                <div class="presContent" data-aos="fade-right">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/s162.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/s151.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/s141.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="titleEvent">
-                                <h5>Conférences</h5>
+                            <div class="videoPart col-lg-6">
+                                <iframe data-aos="fade-left" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                             </div>
-                            <div class="description">
-                                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
-                                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait
-                                que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en
-                                soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des
-                                passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de 
-                                texte, comme Aldus PageMaker.</p>
+                        </div>
+
+                        <div class="listingTypeEvent row justify-content-around">
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                        <img class="card-img-top" src="./img/event/s161.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Atelier Maroc 2016</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/s152.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Atelier Maroc 2015</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/s142.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Tea Party 2014</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="evenementItem col-md-5 col-sm-12 " data-aos="fade-up-right">
-                        <div class="pItem">
-                            <div class="imgSlide">
-                                <div class="image"></div>
+                    <div class="dividerEvents"></div>
+
+                    <div class="eventItem">
+                        <div class="titreEvent">
+                            <h2>Sport et Loisirs : </h2>
+                        </div>
+                        <p class="descriptionEvent">
+                            Le sport et les loisirs sont également un outil efficace pour fédérer et rassembler les étudiants. Conscient de cela, l’EMB a organisé plusieurs tournois sportifs et voyages pour partager des moments de joie et de convivialité. </p>
+                        <div class="row justify-content-around">
+                            <div class="photoPart col-lg-6">
+                                <div class="presContent" data-aos="fade-right">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/l161.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/l152a.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item" data-interval="3000">
+                                                <img class="d-block w-100 rounded" src="./img/event/l142.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="titleEvent">
-                                <h5>Dîner d'intégration</h5>
+                            <div class="videoPart col-lg-6">
+                                <iframe data-aos="fade-left" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                             </div>
-                            <div class="description">
-                                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
-                                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                        </div>
+
+                        <div class="listingTypeEvent row justify-content-around">
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                        <img class="card-img-top" src="./img/event/l162.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Voyage à Barcelone 2016</h5>
+                                      <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/l152n.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Tournoi 2 Futsal 2015</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/l152a.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Tournoi 1 Futsal 2015</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemEvent col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./img/event/l141.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                     <h5 class="card-title">Tournoi Futsal 2014</h5>
+                                     <a href="#" class="btn btn-dark">Plus d'infos</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="evenementItem col-md-5 col-sm-12 " data-aos="fade-up-left">
-                        <div class="pItem">
-                            <div class="imgSlide">
-                                <div class="image"></div>
-                            </div>
-                            <div class="titleEvent">
-                                <h5>Sport et loisirs</h5>
-                            </div>
-                            <div class="description">
-                                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
-                                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait
-                                que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en
-                                soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des
-                                passages du Lorem Ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -197,13 +371,13 @@
                         <div class="socialMedia text-center">
                             <h6>Suivez Nous</h6>
                             <div class="sm">
-                                <img src="img/facebook.png">
+                                <img src="img/footerMedia/facebook.png">
                             </div>
                             <div class="sm">
-                                <img src="img/youtube.png">
+                                <img src="img/footerMedia/youtube.png">
                             </div>
                             <div class="sm">
-                                <img src="img/instagram.png">
+                                <img src="img/footerMedia/instagram.png">
                             </div>
                         </div>
                     </div>

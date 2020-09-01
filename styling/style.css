@@ -9,8 +9,8 @@
     --color-part2: #e8e8e8;
 }
 
-
-html,body{
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -75,7 +75,7 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: var(--color-b);
+    background-color: var(--color-black);
     color: var(--color-special);
     border: 1px solid var(--color-black);
     border-radius: 25px;
@@ -106,4 +106,3 @@ button.btn:hover {
     background-color: var(--color-special);
     margin: 0 auto;
 }
-

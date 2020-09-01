@@ -1,86 +1,121 @@
 /***************  navigationBar  ***************/
-#navigationBar nav {
-    background-color: var(--color-part1);
+
+#navBar {
+    height: 110px;
+    background-color: white;
 }
 
-#navigationBar .navbar-brand {
-    width: 12%;
-    height: 12%;
-}
-#navigationBar .navbar-brand img {
-    width: 90%;
-    height: 90%;
-    margin-bottom: 2px;
+#navBar .logo {
+    float: left;
+    padding: 20px 0;
 }
 
-#navigationBar .navbar-toggler {
-    background-color: var(--color-part1);
+#navBar .logo img {
+    height: 70px;
 }
 
-#navigationBar #myNavbar .nav-link {
-    color: var(--color-black);
-    text-align: center;
-    margin-left: 15px;
+#navBar .navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+}
+
+#navBar .navigation-menu a {
+    margin-left: 12px;
+    color: #20232a;
+    font-size: 16px;
     font-weight: bold;
-}
-#navigationBar #myNavbar li .nav-link.active {
-    background-color: var(--color-special);
-    border-radius: 14px;
-    font-weight: bold;
-    color: var(--color-part1);
-}
-#navigationBar #myNavbar li .nav-link:hover:not(.active) {
-    border-bottom: 2px solid var(--color-special);
-    border-bottom-width: thin;
-    color: var(--color-special);
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: 0.3s linear;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 1199px) and (min-width:991px) {
-    .accPre {
-        margin-top: 12px;
+#navBar .navigation-menu a:hover {
+    background-color: #0171ad;
+    color: #20232a;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 110px;
+    line-height: 110px !important;
+    font-size: 30px;
+    display: none !important;
+    cursor: pointer;
+    color: #0171ad;
+}
+
+@media screen and (max-width: 991px) {
+    #navBar .menu-toggle-btn {
+        display: block !important;
+    }
+
+    #navBar .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 600px;
+        background-color: #20232a;
+        top: 110px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #navBar .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #20232a;
+        position: absolute;
+        top: -10px;
+        right: 16px;
+    }
+
+    #navBar .navigation-menu a {
+        display: block;
+        color: white;
+        margin: 10px 0;
+    }
+
+    #navBar .navigation-menu.active {
+        display: block;
+        z-index: 1;
     }
 }
 
-/***************  slider  ***************/
-#slider {
-    background-image: url("./../img/background/event.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
-    height: 85vh;
-}
-
-#slider h1 {
-    font-weight: bold;
-    font-size: 5rem;
-    text-align: center;
-    line-height: 85vh;
-    text-transform: uppercase;
-    color: var(--color-part1);
-}
-
-@media only screen and (max-width: 450px){
-    #slider h1 {
-        font-size: 2rem;
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #navBar .navigation-menu a {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 5px;
+        border-radius: 4px;
+        transition: 0.3s linear;
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width:450px){
-    #slider h1 {
-        font-size: 3rem;
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #navBar .navigation-menu::before {
+        right: 39px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    #slider h1 {
-        font-size: 4rem;
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #navBar .navigation-menu::before {
+        right: 44px;
     }
 }
 
-/**************** Nos Projets *******************/
+/**************** Nos Events *******************/
 
 #events {
-    background-color: var(--color-part1);
+    background-color: var(--color-part2);
     padding-top: 60px;
     padding-bottom: 50px;
 }
@@ -89,48 +124,99 @@
     font-weight: bold;
 }
 
-.title .divider2 {
-    width: 300px;
-}
-
 .title .divider1 {
     width: 50px;
 }
 
-.evenementItem {
-    margin-top: 20px;
+.title .divider2 {
+    width: 370px;
+    margin-bottom: 40px;
 }
 
-.imgSlide,.image {
-    width: 100%;
-    height: 250px;
-    background-color: black;
-}
-
-.titleEvent {
-    background-color: var(--color-black);
-    color: var(--color-special);
-    margin-top: -50px;
-    width: 80%;
-    float: left;
-}
-
-.titleEvent h5{
-    text-align: right;
-    padding:10px 20px 8px;
+.allEvents .eventItem .titreEvent h2{
     font-weight: bold;
+    margin-left: 40px;
 }
 
-.description {
-    background-color: var(--color-part2);
-    color: var(--color-black);
-}
-
-.description p {
+.allEvents .eventItem  p{
+    margin-bottom: 30px;
     padding: 15px;
     text-align: justify;
 }
 
+.photoPart,.videoPart{
+    margin-bottom: 20px;
+}
+.videoPart iframe {
+    width: 100%;
+    height: 360px;
+}
+
+.presContent .carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out 0.85s;
+}
+
+.presContent .carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+.itemEvent{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.itemEvent .card img {
+    width: 100%;
+    height: 230px;
+}
+
+.itemEvent .card-title {
+    font-weight: bold;
+}
+
+.dividerEvents{
+    width: 70%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: var(--color-special);
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .videoPart iframe {
+        width: 100%;
+        height: 300px;
+    }
+    .itemEvent .card img {
+        height: 200px;
+    }
+    .itemEvent .card-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .itemEvent .card img {
+        height: 350px;
+    }
+    .videoPart iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .itemEvent .card img {
+        height: 280px;
+    }
+    .videoPart iframe {
+        width: 100%;
+        height: 280px;
+    }
+}
 
 /***************  Links footer  ***************/
 #links {
@@ -190,11 +276,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .part2Footer{
+    .part2Footer {
         margin: 0;
         padding: 0;
     }
-    
+
     .Alllink {
         margin-left: 0%;
         padding: 0;
@@ -220,7 +306,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width:450px) {
+@media only screen and (max-width: 767px) and (min-width: 450px) {
     .l1 {
         margin-bottom: 5%;
     }

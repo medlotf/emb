@@ -1,0 +1,540 @@
+/***************  notification  ***************/
+#notification {
+    background: var(--color-special);
+    color: #20232a;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/***************  navigationBar  ***************/
+
+#navBar {
+    height: 110px;
+    background-color: white;
+}
+
+#navBar .logo {
+    float: left;
+    padding: 20px 0;
+}
+
+#navBar .logo img {
+    height: 70px;
+}
+
+#navBar .navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+}
+
+#navBar .navigation-menu a {
+    margin-left: 12px;
+    color: #20232a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: 0.3s linear;
+    text-decoration: none;
+}
+
+#navBar .navigation-menu a:hover {
+    background-color: #0171ad;
+    color: #20232a;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 110px;
+    line-height: 110px !important;
+    font-size: 30px;
+    display: none !important;
+    cursor: pointer;
+    color: #0171ad;
+}
+
+@media screen and (max-width: 991px) {
+    #navBar .menu-toggle-btn {
+        display: block !important;
+    }
+
+    #navBar .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 600px;
+        background-color: #20232a;
+        top: 110px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #navBar .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #20232a;
+        position: absolute;
+        top: -10px;
+        right: 16px;
+    }
+
+    #navBar .navigation-menu a {
+        display: block;
+        color: white;
+        margin: 10px 0;
+    }
+
+    #navBar .navigation-menu.active {
+        display: block;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #navBar .navigation-menu a {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 5px;
+        border-radius: 4px;
+        transition: 0.3s linear;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #navBar .navigation-menu::before {
+        right: 39px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #navBar .navigation-menu::before {
+        right: 44px;
+    }
+}
+
+/***************  slider  ***************/
+#slider {
+    background-color: black;
+    height: 650px;
+}
+
+/***************  presentation  ***************/
+#presentation {
+    background-color: var(--color-part1);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.title .divider1 {
+    width: 60px;
+}
+
+.title .divider2 {
+    width: 400px;
+}
+
+.presContent {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.presContent .title {
+    font-weight: bold;
+    text-transform: none;
+}
+
+#presentation .presContent .btn:hover {
+    background-color: var(--color-black);
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.video iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/***************  eventAdhesion  ***************/
+#eventAdhesion {
+    background-color: var(--color-part2);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#eventAdhesion .title .divider1 {
+    width: 50px;
+}
+
+#eventAdhesion .title .divider2 {
+    width: 260px;
+}
+
+.presContent .carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out 0.85s;
+}
+
+.presContent .carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+#eventAdhesion .adh .title .divider1 {
+    width: 50px;
+}
+
+#eventAdhesion .adh .title .divider2 {
+    width: 500px;
+}
+
+.item {
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+#eventAdhesion .adh .btn:hover {
+    background-color: var(--color-black);
+}
+
+.image {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.image img {
+    width: 30%;
+    height: 30%;
+}
+
+.description h6 {
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) {
+    .adh .title.aos-init.aos-animate {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #eventAdhesion .adh .title .divider2 {
+        width: 450px;
+    }
+    #eventAdhesion h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 508px) and (min-width: 461px) {
+    #eventAdhesion .adh .title .divider2 {
+        width: 450px;
+    }
+    #eventAdhesion h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 460px) {
+    #eventAdhesion .adh .title .divider2 {
+        width: 350px;
+    }
+}
+
+/***************  testimonials  ***************/
+
+#testimonials {
+    background-color: var(--color-part1);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#testimonials .divider1 {
+    width: 50px;
+}
+
+#testimonials .divider2 {
+    width: 440px;
+    margin-bottom: 80px;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+.testimonial .pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonial .testimonial-title {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0c4767;
+    margin: 0 0 70px 0;
+}
+
+.testimonial .testimonial-title small {
+    font-size: 15px;
+    font-weight: 600;
+    color: #787878;
+}
+
+.testimonial .description {
+    font-size: 16px;
+    color: #787878;
+    line-height: 27px;
+    position: relative;
+    margin: 0;
+}
+.heading-title {
+    margin-bottom: 100px;
+}
+.testimonial .description:before {
+    content: "\f10d";
+    font-family: fontawesome;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 48%;
+    font-size: 20px;
+    color: #fa7921;
+    line-height: 31px;
+    border: 2px solid #fa7921;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #fff;
+    border: 2px solid #0c4767;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+    border: 2px solid #fa7921;
+}
+
+/***************  partenaire  ***************/
+#partenaire {
+    background-color: var(--color-part2);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#partenaire .divider1 {
+    width: 50px;
+}
+
+#partenaire .divider2 {
+    width: 380px;
+}
+
+#partenaire .prtImg {
+    margin-bottom: 2%;
+}
+#partenaire .prtImg img {
+    width: 65%;
+}
+
+/***************  Links footer  ***************/
+#links {
+    background-color: var(--color-black);
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: var(--color-part1);
+}
+
+.part1Footer img {
+    width: 60%;
+    margin-top: 25%;
+}
+
+.part1Footer h6 {
+    padding-top: 5px;
+    color: var(--color-part1);
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.part2Footer .header {
+    text-align: center;
+}
+.part2Footer .header .divider1 {
+    background-color: var(--color-special);
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: -1%;
+}
+
+.Alllink {
+    margin-left: 5%;
+    position: relative;
+}
+
+.listOfLinks {
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 14px;
+    width: 45%;
+    display: inline-block;
+}
+.listOfLinks ul li {
+    list-style-type: none;
+    font-size: 18px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.listOfLinks ul li span {
+    margin-right: 2%;
+}
+
+.listOfLinks ul li:hover {
+    color: var(--color-special);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .part2Footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .Alllink {
+        margin-left: 0%;
+        padding: 0;
+        margin: 0;
+    }
+    .l2 {
+        width: 54%;
+        margin-right: -15px;
+    }
+    .l1 {
+        width: 54%;
+        margin-left: -15px;
+    }
+
+    .socialMedia h6 {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Alllink {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 450px) {
+    .l1 {
+        margin-bottom: 5%;
+    }
+
+    .part1Footer {
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .listOfLinks {
+        padding-top: 20px;
+        margin-bottom: 25%;
+        width: 100%;
+        display: contents;
+    }
+
+    .Alllink {
+        margin-left: 25%;
+        margin-top: 28px;
+        position: relative;
+    }
+
+    .part1Footer {
+        margin-top: -20%;
+    }
+}
+
+.l2 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.fa-home {
+    margin-left: 0.5%;
+    padding-right: 0.5%;
+}
+.fa-tasks {
+    margin-left: 1%;
+    padding-right: 0.8%;
+}
+.fa-calendar-alt {
+    margin-left: 1.5%;
+    padding-right: 1%;
+}
+.fa-quote-right {
+    margin-left: 0.5%;
+    padding-right: 1.2%;
+}
+
+.part3Footer {
+    margin-top: 6%;
+}
+
+.part3Footer button {
+    border-radius: 10px;
+    margin-top: 0%;
+}
+
+.part3Footer button:hover {
+    background-color: var(--color-part1);
+    border-color: var(--color-part1);
+}
+
+.socialMedia {
+    margin-top: 10%;
+}
+
+.socialMedia h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sm {
+    width: 30%;
+    display: inline-block;
+}
+
+.socialMedia h6 {
+    font-size: 15px;
+}
+
+.sm img {
+    width: 45px;
+}
+
+/**************/

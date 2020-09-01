@@ -1,52 +1,122 @@
 /***************  notification  ***************/
 #notification {
-    background: var(--color-special) ;
+    background: var(--color-special);
     color: #20232a;
     text-align: center;
     padding-bottom: 10px;
 }
 
-
 /***************  navigationBar  ***************/
-#navigationBar nav {
-    background-color: var(--color-part1);
+
+#navBar {
+    height: 110px;
+    background-color: white;
 }
 
-#navigationBar .navbar-brand {
-    width: 12%;
-    height: 12%;
-}
-#navigationBar .navbar-brand img {
-    width: 90%;
-    height: 90%;
-    margin-bottom: 2px;
+#navBar .logo {
+    float: left;
+    padding: 20px 0;
 }
 
-#navigationBar .navbar-toggler {
-    background-color: var(--color-part1);
+#navBar .logo img {
+    height: 70px;
 }
 
-#navigationBar #myNavbar .nav-link {
-    color: var(--color-black);
-    text-align: center;
-    margin-left: 15px;
+#navBar .navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+}
+
+#navBar .navigation-menu a {
+    margin-left: 12px;
+    color: #20232a;
+    font-size: 16px;
     font-weight: bold;
-}
-#navigationBar #myNavbar li .nav-link.active {
-    background-color: var(--color-special);
-    border-radius: 14px;
-    font-weight: bold;
-    color: var(--color-part1);
-}
-#navigationBar #myNavbar li .nav-link:hover:not(.active) {
-    border-bottom: 2px solid var(--color-special);
-    border-bottom-width: thin;
-    color: var(--color-special);
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: 0.3s linear;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 1199px) and (min-width:991px) {
-    .accPre {
-        margin-top: 12px;
+#navBar .navigation-menu a:hover {
+    background-color: #0171ad;
+    color: #20232a;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    float: right;
+    height: 110px;
+    line-height: 110px !important;
+    font-size: 30px;
+    display: none !important;
+    cursor: pointer;
+    color: #0171ad;
+}
+
+@media screen and (max-width: 991px) {
+    #navBar .menu-toggle-btn {
+        display: block !important;
+    }
+
+    #navBar .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 600px;
+        background-color: #20232a;
+        top: 110px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #navBar .navigation-menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #20232a;
+        position: absolute;
+        top: -10px;
+        right: 16px;
+    }
+
+    #navBar .navigation-menu a {
+        display: block;
+        color: white;
+        margin: 10px 0;
+    }
+
+    #navBar .navigation-menu.active {
+        display: block;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #navBar .navigation-menu a {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 5px;
+        border-radius: 4px;
+        transition: 0.3s linear;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #navBar .navigation-menu::before {
+        right: 39px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #navBar .navigation-menu::before {
+        right: 44px;
     }
 }
 
@@ -56,7 +126,6 @@
     height: 650px;
 }
 
-
 /***************  presentation  ***************/
 #presentation {
     background-color: var(--color-part1);
@@ -64,79 +133,144 @@
     padding-bottom: 50px;
 }
 
+#presentation .title .divider2 {
+    width: 400px;
+}
+
 .presParagraph {
     text-align: justify;
     text-justify: inter-word;
     color: var(--color-black);
+    font-size: 20px;
 }
 
 /************ Members *******************/
 
-#members{
+#members {
     background-color: var(--color-part2);
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
-#members .title .divider2{
+#members .title .divider2 {
     width: 280px;
 }
 
-#members .item{
+#members .item {
     margin-top: 10%;
     margin-bottom: 5%;
 }
 
-#members .item img{
+#members .item img {
     width: 60%;
     height: 60%;
     margin-left: 20%;
     margin-bottom: 1%;
 }
 
-#members .item .infoPerson{
+#members .item .infoPerson {
     margin-top: 3%;
     text-align: center;
 }
 
-#members .item .infoPerson .nom{
+#members .item .infoPerson .nom {
     font-weight: bold;
 }
 
-#members .item .infoPerson .role{
+#members .item .infoPerson .role {
     color: var(--color-special);
     font-weight: bold;
 }
 
-#members .item .infoPerson h5{
+#members .item .infoPerson h5 {
     line-height: 1;
 }
 
-#members .item .infoPerson > h5{
+#members .item .infoPerson > h5 {
     margin-top: -1%;
 }
 
-#members .item .infoPerson .reseauSoci .fab{
+#members .item .infoPerson .reseauSoci .fab {
     font-size: 26px;
     margin-top: 1%;
-    
 }
-.reseauSoci a{
+.reseauSoci a {
     color: var(--color-black);
     text-decoration: none;
     transition: all 0.25s ease-in 0s;
 }
 
-
-.reseauSoci a:hover{
-    color:var(--color-special);
+.reseauSoci a:hover {
+    color: var(--color-special);
+    transform: scale(1.2);
+    text-decoration: none;
 }
 
-
-#members .item .infoPerson .reseauSoci .fa-instagram{
+#members .item .infoPerson .reseauSoci .fa-instagram {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+@media screen and (max-width: 575px) {
+    #members .item {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+
+/********************************/
+
+#oldTeams {
+    background-color: var(--color-part1);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#oldTeams .item {
+    background-color: var(--color-part2);
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#oldTeams .item .title {
+    background-color: var(--color-black);
+    margin-top: 0px;
+    border-radius: 5px 5px 0 0;
+    padding: 8px 0;
+}
+
+#oldTeams .item .title h5 {
+    font-weight: bold;
+    color: var(--color-part1);
+}
+
+#oldTeams .item .listMembres {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+#oldTeams .item .listMembres ul {
+    list-style: none;
+}
+
+#oldTeams .item .listMembres ul li {
+    color: var(--color-black);
+    float: left;
+}
+
+#oldTeams .item .listMembres ul li span {
+    color: #ac6206;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/********************************/
 
 /***************  Links footer  ***************/
 #links {
@@ -196,11 +330,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .part2Footer{
+    .part2Footer {
         margin: 0;
         padding: 0;
     }
-    
+
     .Alllink {
         margin-left: 0%;
         padding: 0;
@@ -226,7 +360,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width:450px) {
+@media only screen and (max-width: 767px) and (min-width: 450px) {
     .l1 {
         margin-bottom: 5%;
     }
